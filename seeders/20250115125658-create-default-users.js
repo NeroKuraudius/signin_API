@@ -7,19 +7,19 @@ module.exports = {
     try {
       const users = [
         {
-          account: 'hoshimachi@example.com',
+          email: 'hoshimachi@example.com',
           password: await bcrypt.hash('superstar', 12),
           created_at: new Date(),
           updated_at: new Date()
         },
         {
-          account: 'yoasobi@example.com',
+          email: 'yoasobi@example.com',
           password: await bcrypt.hash('yorunikakeru', 12),
           created_at: new Date(),
           updated_at: new Date()
         },
         {
-          account: 'yagami@example.com',
+          email: 'yagami@example.com',
           password: await bcrypt.hash('wargreymon', 12),
           created_at: new Date(),
           updated_at: new Date()

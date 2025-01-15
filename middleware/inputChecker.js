@@ -2,7 +2,7 @@ const joi = require('joi')
 
 const signinSchema = joi.object({
   account: joi.string().email().required().messages({
-    'string.empty': 'account is required.',
+    'string.empty': 'email is required.',
     'string.email': 'invalid email format.'
   }),
   password: joi.string().min(8).max(20).required().messages({

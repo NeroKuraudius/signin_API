@@ -15,19 +15,19 @@ app.use(express.json())
 app.listen(port, () => console.log(`Your app is running on port: ${port}!`))
 
 app.post('/signin', inputChecker, async (req, res, next) => {
-  const { account, password } = req.body
+  const { email, password } = req.body
 
   try {
-    const user = await User.findOne({ where: { account }, raw: true })
+    const user = await User.findOne({ where: { email }, raw: true })
     if (!user) {
-      console.log('Signin Error: Incorrect account or password')
-      return res.status(500).json({ Error: 'Incorrect account or password' })
+      console.log('Signin Error: Incorrect email or password')
+      return res.status(500).json({ Error: 'Incorrect email or password' })
     }
 
     const userCheck = await bcrypt.compare(password, user.password)
     if (!userCheck) {
-      console.log('Signin Error: Incorrect account or password')
-      return res.status(500).json({ Error: 'Incorrect account or password' })
+      console.log('Signin Error: Incorrect email or password')
+      return res.status(500).json({ Error: 'Incorrect email or password' })
     }
 
     delete user.password
