@@ -3,13 +3,15 @@
 
 ### 簡易登入API說明
 
-# URL
->>URL
+## URL
+>URL
 
-# Signin
->>Endpoints: **/signin**
->>Method: **POST**
->>Body: 
+## Signin
+>Endpoints: **/signin**
+
+>Method: **POST**
+
+>Body: 
 ```javascript
 {
   "email": "xxxxxx@test.com",
@@ -17,8 +19,8 @@
 }
 ```
 
-# Response
->>Success:
+## Response
+>Success:
 - status: 200
 ```javascript
 {
@@ -27,7 +29,7 @@
 }
 ```
 
->> Failure:
+> Failure:
 - status: 400 or 500
 ```javascript
 {
