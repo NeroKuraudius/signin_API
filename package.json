@@ -6,7 +6,7 @@
     "node": ">= 18.17.0"
   },
   "scripts": {
-    "prestart":"npx sequelize db:migrate && npx sequelize db:seed:all",
+    "prestart": "npx sequelize db:migrate && npx sequelize db:seed:all",
     "start": "node index.js"
   },
   "author": "NeroXu",
@@ -15,7 +15,9 @@
     "bcryptjs": "^2.4.3",
     "express": "^4.21.2",
     "joi": "^17.13.3",
+    "jsonwebtoken": "^9.0.2",
     "mysql2": "^3.12.0",
+    "passport": "^0.7.0",
     "passport-jwt": "^4.0.1",
     "sequelize": "^6.37.5",
     "sequelize-cli": "^6.6.2"
