@@ -9,3 +9,6 @@ const port = process.env.PORT || 3000
 app.use(express.json())
 app.listen(port, ()=>console.log(`Your app is running on port: ${port}!`))
 
+app.post('/signin',(req,res,next)=>{
+  return res.send("hello world!")
+})
