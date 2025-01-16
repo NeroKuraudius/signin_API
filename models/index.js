@@ -1,5 +1,7 @@
 'use strict';
 
+console.log('### DB connecting...')
+
 const fs = require('fs');
 const path = require('path');
 const Sequelize = require('sequelize');

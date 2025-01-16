@@ -1,3 +1,6 @@
+require('dotenv').config()
+
+module.exports =
 {
   "development": {
     "username": "SKIP",
@@ -7,10 +10,10 @@
     "dialect": "mysql"
   },
   "production": {
-    "username": "SKIP",
-    "password": "SKIP",
-    "database": "SKIP",
-    "host": "SKIP",
+    "username": process.env.DB_USERNAME,
+    "password": process.env.PASSWORD,
+    "database": process.env.DATABASE,
+    "host": process.env.HOST,
     "dialect": "mysql"
   }
 }
