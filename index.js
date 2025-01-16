@@ -36,3 +36,7 @@ app.post('/signin', inputChecker, async (req, res, next) => {
     next(err)
   }
 })
+
+app.get('/',(req,res)=>{
+  return res.send('Welcome to express')
+})
