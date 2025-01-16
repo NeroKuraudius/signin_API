@@ -36,3 +36,10 @@
     "Error": "Incorrect Password"
 }
 ```
+
+# 可使用的測試帳號:
+```javascript
+{ email: yoasobi@example.com, password: yorunikakeru}
+{ email: hoshimachi@example.com, password: superstar },
+{ email: yagami@example.com, password: wargreymon }
+```
