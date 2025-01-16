@@ -1,8 +1,8 @@
 {
   "development": {
-    "username": "root",
-    "password": "z8642052",
-    "database": "signin",
+    "username": "SKIP",
+    "password": "SKIP",
+    "database": "SKIP",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
